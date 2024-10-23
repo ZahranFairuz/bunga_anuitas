@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perhitungan Bunga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Perhitungan Bunga</h1>
+        <div class="form-group">
+            <label for="modal">Modal (Rp):</label>
+            <input type="number" id="modal" placeholder="Masukkan modal">
+        </div>
+        <div class="form-group">
+            <label for="sukuBunga">Suku Bunga (%):</label>
+            <input type="number" id="sukuBunga" placeholder="Masukkan suku bunga">
+        </div>
+        <div class="form-group">
+            <label for="tahun">Jangka Waktu (tahun):</label>
+            <input type="number" id="tahun" placeholder="Masukkan jangka waktu">
+        </div>
+        <div class="form-group">
+            <label for="jenisBunga">Pilih Jenis Bunga:</label>
+            <select id="jenisBunga">
+                <option value="tunggal">Bunga Tunggal</option>
+                <option value="majemuk">Bunga Majemuk</option>
+            </select>
+        </div>
+        <button onclick="hitungBunga()">Hitung</button>
+        <div id="hasil"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
